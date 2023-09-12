@@ -1,0 +1,23 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "arcana final.moc3",
+		"Textures": [
+			"arcana final.8192/texture_00.png"
+		],
+		"Physics": "arcana final.physics3.json",
+		"DisplayInfo": "arcana final.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}
