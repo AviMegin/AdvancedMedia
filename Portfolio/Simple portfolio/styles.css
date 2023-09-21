@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the navigation links to look like a magazine */
+.sidebar ul {
+    transform: rotate(-90deg);
+    transform-origin: right top;
+}
+
+.sidebar li {
+    display: inline-block;
+    transform: rotate(90deg);
+    margin-left: 10px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 0;
+}
