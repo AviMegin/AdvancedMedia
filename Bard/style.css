@@ -1,0 +1,84 @@
+/* The book element */
+.book {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  background-color: #fff;
+}
+
+/* The front page of the book */
+.book .front-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/front-page.jpg);
+}
+
+/* The back page of the book */
+.book .back-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/back-page.jpg);
+  opacity: 0;
+}
+
+/* The animation */
+.book .front-page,
+.book .back-page {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.book:hover .front-page {
+  opacity: 0;
+}
+
+.book:hover .back-page {
+  opacity: 1;
+}
+/* The book element */
+.book {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  background-color: #fff;
+}
+
+/* The front page of the book */
+.book .front-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/front-page.jpg);
+}
+
+/* The back page of the book */
+.book .back-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/back-page.jpg);
+  opacity: 0;
+}
+
+/* The animation */
+.book .front-page,
+.book .back-page {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.book:hover .front-page {
+  opacity: 0;
+}
+
+.book:hover .back-page {
+  opacity: 1;
+}
