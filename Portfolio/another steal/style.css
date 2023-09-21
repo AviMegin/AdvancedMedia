@@ -1,0 +1,142 @@
+html,
+body {
+	height: 100%;
+	background-color: #1d1f20;
+	margin: 0;
+	overflow: hidden;
+	font-family: "PT Sans", sans;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 3em;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	height: 100%;
+	margin-top: 50px;
+
+	padding: 0px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 576px) {
+	.container {
+		width: 540px;
+		max-width: 100%;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+		width: 720px;
+		max-width: 100%;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		width: 960px;
+		max-width: 100%;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1140px;
+		max-width: 100%;
+	}
+}
+
+.book {
+	width: 100%;
+	height: 100%;
+	border: 4px solid darkred;
+	position: relative;
+}
+
+$duration: 0.75s;
+
+.book-contents {
+	width: 100%;
+	height: 100%;
+	background-color: #d7bf94;
+	position: relative;
+
+	.book-page {
+		width: 0%;
+		height: 100%;
+		background-color: #d7bf94;
+		overflow: hidden;
+		transition: width $duration linear;
+		border-left: 4px solid darken(#d7bf94, 15%);
+		border-right: 4px solid darken(#d7bf94, 15%);
+
+		position: absolute;
+		left: 0px;
+		top: 0px;
+
+		&.open-from-right {
+			left: auto;
+			right: 0;
+		}
+
+		&.active {
+			width: 100%;
+			transition: width $duration linear;
+		}
+
+		.book-page-contents {
+			width: 716px;
+			//width: 100%; //-- Wont work because text and everything smuuuushes
+			height: 100%;
+			padding-top: 15px;
+			overflow: visible;
+		}
+	}
+}
+
+$bookmarkSize: 70px;
+$initialOffset: -66px;
+$incX: 2px;
+$incY: ($bookmarkSize / 2) + 15px;
+$elements: 3;
+.book-marks {
+	width: 70px;
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+
+	ul {
+		width: 100%;
+		height: 100%;
+
+		li {
+			position: absolute;
+			background-color: white;
+			width: 100%;
+			padding: 10px;
+			font-size: 1.2em;
+			text-align: center;
+			cursor: pointer;
+
+			&.active {
+				background-color: tan;
+			}
+
+			@for $i from 1 through $elements {
+				&:nth-child(#{$i}) {
+					right: $initialOffset - ($incX * ($i - 1));
+					top: 30px + ($incY * ($i - 1));
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-size: calc(12px + (26 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+
+
+}
+img {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  .sideways-scroll-container {
+    scroll-snap-type: y proximity;
+    transform: rotate(-90deg) translateY(-100vh);
+    transform-origin: top right;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: black;
+    height: 100vw;
+    width: 100vh;
+  }
+  
+  .sideways-scroll-child {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    height: 100vw;
+    width: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    background: linear-gradient(white 0%, #e2e2e2 100%);
+  }
+  
+  .scroll-child-content {
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    height: 100vh;
+    width: 100vw;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .scroll-child-content .content-wrapper {
+    text-align: justify;
+  }
+  
+  /* CONTENT STYLING */
+  h2 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: steelblue;
+    padding-bottom: 10px;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
