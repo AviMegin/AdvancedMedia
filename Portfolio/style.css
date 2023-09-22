@@ -109,3 +109,165 @@ h2 {
 ::-webkit-scrollbar {
   display: none;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Antic+Didone&display=swap');
+*{
+    font-family: 'Antic Didone', serif;
+    color: #000;
+    overflow-y: hidden;
+    
+}
+.scrolling-wrapper {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+body {
+    cursor: url('../Svgs/physiognomy-5198208.svg'), auto;
+    
+    &::-webkit-scrollbar {
+        display: none;
+      }
+}
+body {
+    overflow: hidden; /* Disable vertical scrolling */
+}
+
+#horizontal-scroll-container {
+    width: 200%; /* Adjust width as needed */
+    height: 100vh; /* Set the container's height */
+    white-space: nowrap; /* Prevent content from wrapping */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+}
+.page{
+    margin: 0;
+    width: 50%;
+    height: 100vh;
+   
+    position: relative;
+  text-align: center;
+  color: white;
+
+border: 0.5px solid #000;
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 79%, rgb(87, 85, 85) 100%);
+}
+img{
+    height: 100%;
+    align-self: center;
+}
+.navigation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pagetwo{
+    width: 50%;
+    height: auto;
+    border-top: 0.6px solid #000;
+border-bottom: 0.6px solid #000;
+border-left: 0.6px solid #000;
+background: rgb(255,255,255);
+background: linear-gradient(274deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 79%, rgb(109, 106, 106) 100%);
+
+}
+.scrolling-wrapper {  
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+    .card {
+      display: inline-block;
+    }
+  }
+.flex{
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.nav-menu{
+    list-style: none;
+    font-size: 24px;
+}
+
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+/* Scroll icon */
+  .table__scroll--icon  {
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    width: 200px;
+    height: 100px;
+    margin-left: -20px;
+    margin-top: -35px;
+    background: #ddd;
+    box-shadow: inset 0 0 0 10px #000;
+    border-radius: 50px;
+    opacity: 1;
+    animation: badgeHide 0.5s ease-out 3s forwards;
+  
+  
+  }
+  
+  .table__scroll--icon:before {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 48px;
+    background: #000;
+    margin-left: 24px;
+    top: 26px;
+    border-radius: 24px;
+    animation-duration: 1.5s;
+    animation-iteration-count: 3;
+    animation-name: badgeScroll, badgeHide;
+    animation-timing-function: ease-in, linear, ease-out;
+  }
+  
+  
+  @keyframes badgeScroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(100px);
+      transform: translateX(100px);
+    }
+  }
+  
+  @keyframes badgeHide {
+    to {
+      opacity: 0;
+    }
+  }

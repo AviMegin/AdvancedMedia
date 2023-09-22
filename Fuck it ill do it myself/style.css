@@ -1,0 +1,91 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Antic+Didone&display=swap');
+*{
+    font-family: 'Antic Didone', serif;
+    color: #000;
+}
+body {
+   
+}
+
+.page{
+    margin: 0;
+    width: 50%;
+    height: 100vh;
+   
+    position: relative;
+  text-align: center;
+  color: white;
+
+border: 0.5px solid #000;
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 79%, rgb(87, 85, 85) 100%);
+}
+img{
+    height: 100%;
+    align-self: center;
+}
+.navigation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pagetwo{
+    margin: 0;
+    width: 50%;
+    height: 100vh;
+   
+    position: relative;
+  text-align: center;
+  color: white;
+
+    border-top: 0.6px solid #000;
+border-bottom: 0.6px solid #000;
+border-left: 0.6px solid #000;
+background: rgb(255,255,255);
+background: linear-gradient(274deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 79%, rgb(109, 106, 106) 100%);
+
+}
+
+.flex{
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.nav-menu{
+    list-style: none;
+    
+    font-size: 25px;
+}
+
+
+.nav-item {
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  

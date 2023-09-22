@@ -1,0 +1,10 @@
+{
+    "title": "Megin's Portfolio",
+    "menuItems": [
+      { "label": "Project 1", "content": "Content for Project 1" },
+      { "label": "Project 2", "content": "Content for Project 2" },
+      { "label": "About me", "content": "Content about me" },
+      { "label": "Talk to me", "content": "Contact information" }
+    ]
+  }
+  

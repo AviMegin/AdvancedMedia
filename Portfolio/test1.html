@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+body {
+  margin:0;
+  font-family:Georgia;
+}
+#container .box {
+  width:100vw;
+  height:100vh;
+  display:inline-block;
+  position:relative;
+}
+#container .box > div {
+  width:100px;
+  height:100px;
+  font-size:96px;
+  color:#FFF;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-50px 0 0 -50px;
+  line-height:.7;
+  font-weight:bold;
+}
+#container {
+  overflow-y:scroll;
+  overflow-x:hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  background-color:#999;
+  position:absolute;
+  width:100vh;
+  height:100vw;
+}
+#container2 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+  font-size:0;
+}
+
+.one {
+  background-color: #ffffff;
+}
+.two {
+  background-color: #49E83E;
+}
+.three {
+  background-color: #EDDE05;
+}
+.four {
+  background-color: #E84B30;
+}
+
+.page{
+  
+   
+    position: relative;
+  text-align: center;
+  color: white;
+
+border: 0.5px solid #000;
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 79%, rgb(87, 85, 85) 100%);
+}
+img{
+    height: 100%;
+    align-self: center;
+}
+.navigation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pagetwo{
+
+    position: relative;
+  text-align: center;
+  color: white;
+
+    border-top: 0.6px solid #000;
+border-bottom: 0.6px solid #000;
+border-left: 0.6px solid #000;
+background: rgb(255,255,255);
+background: linear-gradient(274deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 79%, rgb(109, 106, 106) 100%);
+
+}
+
+.flex{
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.nav-menu{
+    list-style: none;
+}
+
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/* Translating the content's X ruines the scrollbar length. */
+/*
+#container {
+  overflow:scroll;
+  transform: rotate(90deg) translateY(-100%);
+  transform-origin: top left;
+  background-color:#999;
+  position:absolute;
+  width:100vh;
+  height:100vw;
+}
+#container2 {
+  transform: rotate(-90deg) translateX(-100vw);
+  transform-origin: top left;
+  white-space:nowrap;
+}
+*/
+
+    </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="container2">
+                <div class="box one"> <div class="page">
+
+                        <img class="nav" src="../Svgs/vintage-4234040.svg" alt>
+                        <div class="navigation">
+
+                            <ul class="nav-menu">
+                                <h2>Megin's Portfolio</h2>
+                                <li><a class="nav-item" href="#">Project 1</a></li>
+                                <li><a class="nav-item" href="#">Project 2</a></li>
+                                <br>
+                                <li><a class="nav-item" href="#">About me</a></li>
+                                <li><a class="nav-item" href="#">Talk to me</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="pagetwo">
+
+                    </div>
+
+                    <div>
+                    </div>
+                    <div class="box two"><div>2</div></div>
+                    <div class="box three"><div>3</div></div>
+                    <div class="box four"><div>Last</div></div>
+                </div>
+            </div>
+        </body>
+    </html>
