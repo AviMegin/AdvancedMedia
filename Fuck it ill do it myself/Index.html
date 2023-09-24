@@ -5,19 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Megin</title>
         <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
-        <div class id="container">
+        <div id="container">
             <div id="container2">
                 <div class="flex">
                     <div class="page">
 
                         <img class="nav" src="../Svgs/vintage-4234040.svg" alt>
+
                         <div class="navigation">
 
                             <ul class="nav-menu" id="menu">
                                 <h2>Megin's Portfolio</h2>
-                        
 
                             </ul>
                         </div>
@@ -26,43 +27,12 @@
                     <div class="pagetwo">
                         <h1 id="pageTitle">Welcome to My Portfolio</h1>
                         <p id="pageContent">Select a project to learn more.</p>
-                        <hr>
-                   
+
+                       
                     </div>
                 </div>
             </div>
         </div>
-        <script>
-            // Fetch JSON data and populate the menu and content
-            fetch('menu.json')
-                .then(response => response.json())
-                .then(data => {
-                    const menu = document.getElementById('menu');
-                    const pageTitle = document.getElementById('pageTitle');
-                    const pageContent = document.getElementById('pageContent');
-                    
-                    // Set the page title
-                    pageTitle.textContent = data.title;
-    
-                    // Create menu items dynamically
-                    data.menuItems.forEach(item => {
-                        const li = document.createElement('li');
-                        const a = document.createElement('a');
-                        a.textContent = item.label;
-                        a.href = '#';
-                        a.classList.add('nav-item');
-                        
-                        // Add a click event listener to load content
-                        a.addEventListener('click', () => {
-                            pageTitle.textContent = item.label;
-                            pageContent.textContent = item.content;
-                        });
-                        
-                        li.appendChild(a);
-                        menu.appendChild(li);
-                    });
-                })
-                .catch(error => console.error('Error loading JSON:', error));
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
