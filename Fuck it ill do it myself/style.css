@@ -45,7 +45,10 @@ img{
   border-left: 0.6px solid #000;
   background: linear-gradient(274deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 79%, rgb(109, 106, 106) 100%);
 }
-
+.contents{
+ 
+  word-wrap: break-word;
+}
 #pageContent {
   transition: opacity 0.5s;
 }
