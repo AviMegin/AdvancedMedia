@@ -3,17 +3,30 @@
   "menuItems": [
     {
       "label": "Project 1",
-      "content": "Content for Project 1"
+      "content": "Content for Project 1",
+      "subsections": [
+        {
+          "sublabel": "Subsection 1",
+          "subcontent": "Subcontent for Subsection 1"
+        },
+        {
+          "sublabel": "Subsection 2",
+          "subcontent": "Subcontent for Subsection 2"
+        }
+      ]
     },
     {
       "label": "Project 2",
-      "content": "Vivamus iaculis ante ut sollicitudin venenatis. Pellentesque tristique nibh cursus purus scelerisque posuere. Nulla facilisi. Aliquam cursus ipsum et pretium egestas. Donec varius in ipsum eu ornare. Proin vulputate augue et congue pharetra. Maecenas ac mattis felis. Phasellus ut lorem consectetur, varius tellus at, vulputate libero. Pellentesque hendrerit neque leo, eget pellentesque felis maximus in. Donec elit nunc, porta eu dapibus eu, mollis vitae felis. Vivamus ut porta enim. Etiam tempor mattis nunc, ac porttitor sem dictum vel. Nunc faucibus magna elit, quis imperdiet enim convallis sit amet. Quisque pulvinar odio in mi convallis, vitae eleifend sapien facilisis. Proin ipsum augue, molestie a justo at, hendrerit rhoncus nisl.Aliquam ut dolor viverra, malesuada nisi non, accumsan lacus. Ut interdum justo et lectus cursus cursus in a neque. Etiam condimentum est vitae neque dapibus elementum. Quisque ex urna, viverra eu pulvinar quis, lobortis non massa. Ut augue ex, tristique ut eros eget, interdum ultricies arcu. Nullam metus velit, tincidunt vitae hendrerit id, mattis nec ipsum. Aenean laoreet orci eget mattis euismod. Donec faucibus consectetur nibh ac scelerisque. Nullam facilisis fermentum quam tempor imperdiet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam turpis tellus, gravida quis vehicula eu, interdum ut massa. Sed id mi nec elit luctus volutpat facilisis non turpis. In ultricies quis magna sit amet eleifend. Integer elementum, tellus ac blandit porttitor, metus orci convallis sem, nec pellentesque risus tellus vel metus. Aliquam posuere et dui nec pharetra. Maecenas ullamcorper pulvinar faucibus. Aenean egestas elit eget mauris dignissim auctor eget vel mauris. In eleifend imperdiet metus vitae aliquet. Quisque facilisis odio interdum, varius ex ac, tincidunt velit. Sed id commodo mauris. Sed non pulvinar lectus, sed sagittis neque. Aenean faucibus nunc et odio dapibus, non placerat orci iaculis. Cras laoreet purus et tempus pretium. Curabitur sodales metus a porta condimentum. Vivamus ut mi rhoncus tortor porta accumsan sit amet sed elit." },{
-        "label": "About me",
-        "content": "Content about me"
-      },
-      {
-        "label": "Talk to me",
-        "content": "Contact information"
-      }
-    ]
-  }
+      "content": "Content for Project 2"
+    },
+    {
+      "label": "About me",
+      "content": "Content about me"
+    },
+    {
+      "label": "Talk to me",
+      "content": "Contact information"
+    }
+    
+  ]
+}

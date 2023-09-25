@@ -1,41 +1,53 @@
+// Declare subsectionsContainer in a higher scope
+const subsectionsContainer = document.querySelector('.subsections');
 
+// Fetch JSON data and populate the menu and content
 fetch('menu.json')
-.then(response => response.json())
-.then(data => {
-    const menu = document.getElementById('menu');
-    const pageTitle = document.getElementById('pageTitle');
-    const pageContent = document.getElementById('pageContent');
-    
-    // Function to apply the fade-out and fade-in animations
-    function applyFadeAnimation(newContent) {
-        pageContent.style.opacity = 0; // Start the fade-out animation
+    .then(response => response.json())
+    .then(data => {
+        const menu = document.getElementById('menu');
+        const pageTitle = document.getElementById('pageTitle');
+        const pageContent = document.getElementById('pageContent');
+        const projectTitle = document.getElementById('projectTitle');
+        const projectContent = document.getElementById('projectContent');
 
-        // Wait for the fade-out animation to complete
-        setTimeout(() => {
-            pageContent.textContent = newContent; // Set the new content
-            pageContent.style.opacity = 1; // Start the fade-in animation
-        }, 500); // Adjust this timing to match your CSS animation duration
-    }
+        // Set the page title and content
+        pageTitle.textContent = data.title;
+        pageContent.textContent = "Select a project to learn more.";
 
-    // Set the page title
-    pageTitle.textContent = data.title;
+        // Create menu items dynamically
+        data.menuItems.forEach(item => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.textContent = item.label;
+            a.href = '#';
+            a.classList.add('nav-item');
 
-    // Create menu items dynamically
-    data.menuItems.forEach(item => {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.textContent = item.label;
-        a.href = '#';
-        a.classList.add('nav-item');
+            // Add a click event listener to load content
+            a.addEventListener('click', () => {
+                pageTitle.textContent = item.label;
+                projectTitle.textContent = item.label;
+                projectContent.textContent = item.content;
 
-        // Add a click event listener to load content with animation
-        a.addEventListener('click', () => {
-            pageTitle.textContent = item.label;
-            applyFadeAnimation(item.content); // Pass the content to the function
+                // Clear previous subsections
+                subsectionsContainer.innerHTML = '';
+
+                // Check if the item has subsections
+                if (item.subsections) {
+                    item.subsections.forEach(subsection => {
+                        const sub = document.createElement('div');
+                        sub.classList.add('subsection');
+                        sub.innerHTML = `
+                            <h2>${subsection.sublabel}</h2>
+                            <p>${subsection.subcontent}</p>
+                        `;
+                        subsectionsContainer.appendChild(sub);
+                    });
+                }
+            });
+
+            li.appendChild(a);
+            menu.appendChild(li);
         });
-
-        li.appendChild(a);
-        menu.appendChild(li);
-    });
-})
-.catch(error => console.error('Error loading JSON:', error));
+    })
+    .catch(error => console.error('Error loading JSON:', error));
