@@ -2,15 +2,15 @@
   "title": "Megin's Portfolio",
   "menuItems": [
     {
-      "label": "Project 1",
-      "content": "Content for Project 1",
+      "label": "Portfolio",
+      "content": "Making a portfolio for all the project in advanced media",
       "subsections": [
         {
-          "sublabel": "Subsection 1",
-          "subcontent": "Subcontent for Subsection 1"
+          "sublabel": "Research question 1",
+          "subcontent": "To answer this research question..."
         },
         {
-          "sublabel": "Subsection 2",
+          "sublabel": "Research question 2",
           "subcontent": "Subcontent for Subsection 2"
         }
       ]
@@ -21,7 +21,7 @@
     },
     {
       "label": "About me",
-      "content": "Content about me"
+      "content": "My name is Megin van Herk, I have done both semesters in media design and AI. therefore I have a unique combination to be able to do practical and visual effects. For my portfolio I would love to incorporate such things.For the next couple of weeks I am planning to create a portfolio website that is anything from boring, it will include all the learning outcomes and potential project that I am going to do."
     },
     {
       "label": "Talk to me",

@@ -6,6 +6,7 @@
 
 body::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
+  font-size: 1em;
 }
 
 
@@ -19,7 +20,7 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.page, .pagetwo {
+.page{
   width: 100%;
   position: relative;
   min-height: 100vh;
@@ -37,13 +38,30 @@ img{
 }
 
 .pagetwo {
+  padding-left: 1%;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: 0.5px solid #000;
   overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent content from wrapping to new lines */
+ /* Prevent content from wrapping to new lines */
 
   border-top: 0.6px solid #000;
   border-bottom: 0.6px solid #000;
   border-left: 0.6px solid #000;
   background: linear-gradient(274deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 79%, rgb(109, 106, 106) 100%);
+}
+.subsections{
+  margin: 10px;
+  padding: 10px;
+ max-width: 500px;
+ border: 1px solid #000;
+}
+.dot{
+  border: 1px solid #000;
 }
 .contents{
  
@@ -62,10 +80,8 @@ img{
 .nav-menu{
     list-style: none;
     
-    font-size: 25px;
+    font-size: 1em;
 }
-
-
 .nav-item {
     padding: 20px;
     display: inline-block;

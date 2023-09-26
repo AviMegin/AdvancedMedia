@@ -49,6 +49,7 @@ body {
 * {
   box-sizing: border-box;
   font-family: 'Antic Didone', serif;
+  font-size: 1em;
 }
 
 img {

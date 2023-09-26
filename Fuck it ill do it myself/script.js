@@ -40,6 +40,7 @@ fetch('menu.json')
                         sub.innerHTML = `
                             <h2>${subsection.sublabel}</h2>
                             <p>${subsection.subcontent}</p>
+                            <hr>
                         `;
                         subsectionsContainer.appendChild(sub);
                     });
