@@ -20,6 +20,11 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.container2{
+  overflow-x: auto; 
+  height: 100%;
+  overflow-y: hidden;
+}
 .page{
   width: 100%;
   position: relative;
@@ -39,14 +44,14 @@ img{
 
 .pagetwo {
   padding-left: 1%;
-  width: 100%;
+  width: 50%;
   position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   color: white;
   border: 0.5px solid #000;
-  overflow-x: auto; /* Enable horizontal scrolling */
+  /* Enable horizontal scrolling */
  /* Prevent content from wrapping to new lines */
 
   border-top: 0.6px solid #000;
