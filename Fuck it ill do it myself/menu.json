@@ -3,21 +3,25 @@
   "menuItems": [
     {
       "label": "Portfolio",
-      "content": "Making a portfolio for all the project in advanced media",
+      "content": "How can the integration of interactive and aesthetic aspects, and AI technologies enhance the user experience  on a website?",
       "subsections": [
         {
-          "sublabel": "Research question 1",
-          "subcontent": "To answer this research question..."
+          "sublabel": "What are the key principles of interactive design that contribute to a positive user experience on a website?",
+          "subcontent": "To Answer this research question I made a competitive analysis, looking at professional portfolios and finding the important patterns that make a good interactive and nice user experience"
         },
         {
-          "sublabel": "Research question 2",
-          "subcontent": "Subcontent for Subsection 2"
+          "sublabel": "In what ways can AI technologies be effectively incorporated into web design to improve user interactions and content delivery?",
+          "subcontent": "To Answer this research question I made an available product analysis. looking at how other people integrated an AI chatbot of themselves the ethics behind it"
+        },
+        {
+          "sublabel": "In what ways can AI technologies be effectively incorporated into web design to improve user interactions and content delivery?",
+          "subcontent": "To answer this question the making of a prototype and doing user testing on it, and the continues process of testing after coding is required"
         }
       ]
     },
     {
-      "label": "Project 2",
-      "content": "Content for Project 2"
+      "label": "Social Sphere",
+      "content": "Garage2020 collaborates closely with the municipality of Eindhoven. The municipality has commissioned them to develop an innovation that helps youth workers to navigate the rapidly changing online world in which a large part of young people are active. According to research conducted by Garage2020, Dutch youth spend an average of 6 to 7 hours online per day. Youth work is not prepared for this. The field is trying to increase its digital footprint, but outside of digital activities (such as game events and editing workshops offered by Dynamo, but physically) it has not been very successful. \n \n \n \n The problem is that online activities and online methods to connect youth workers with young people are still virtually non-existent.Currently, the current concept for this problem is the 'social sphere'. This will be a platform where youth workers can learn how to use social media channels to engage with and support / inform online youth in Eindhoven using gamification elements. Stakeholder Fenna Dam has again partnered with Fontys to take this project to the next phase."
     },
     {
       "label": "About me",

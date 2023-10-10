@@ -50,7 +50,6 @@ img{
   display: flex;
   flex-direction: column;
   color: white;
-  border: 0.5px solid #000;
   /* Enable horizontal scrolling */
  /* Prevent content from wrapping to new lines */
 
@@ -62,8 +61,10 @@ img{
 .subsections{
   margin: 10px;
   padding: 10px;
- max-width: 500px;
+ max-width: 400px;
+ height: auto;
  border: 1px solid #000;
+ font-size: 0.8em;
 }
 .dot{
   border: 1px solid #000;
@@ -72,8 +73,10 @@ img{
  
   word-wrap: break-word;
 }
-#pageContent {
+#projectContent {
   transition: opacity 0.5s;
+  word-wrap: break-word;
+  max-width: 400px;
 }
 
 .flex{
