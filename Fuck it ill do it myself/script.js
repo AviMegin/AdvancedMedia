@@ -10,7 +10,8 @@ fetch('menu.json')
         const pageContent = document.getElementById('pageContent');
         const projectTitle = document.getElementById('projectTitle');
         const projectContent = document.getElementById('projectContent');
-
+        const projectInfo = document.getElementById('projectInfo'); // Added a new element for project info
+        const researchQ = document.getElementById('research'); 
         // Set the page title and content
         pageTitle.textContent = data.title;
         pageContent.textContent = "Select a project to learn more.";
@@ -27,7 +28,6 @@ fetch('menu.json')
             a.addEventListener('click', () => {
                 pageTitle.textContent = item.label;
                 projectTitle.textContent = item.label;
-                projectContent.textContent = item.content;
 
                 // Clear previous subsections
                 subsectionsContainer.innerHTML = '';
@@ -45,6 +45,24 @@ fetch('menu.json')
                         subsectionsContainer.appendChild(sub);
                     });
                 }
+
+                // Load project content
+                projectContent.innerHTML = item.content;
+                researchQ.innerHTML = item.researchQ;
+
+                // Load project info
+                projectInfo.innerHTML = `
+                 
+                    <p>${item.description}</p>
+                    <div class="secondimage">
+                    <img src="${item.image}" alt="${item.label}" />
+                    </div>
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="${item.link1}">Link 1</a></li>
+                        <li><a href="${item.link2}">Link 2</a></li>
+                    </ul>
+                `;
             });
 
             li.appendChild(a);
@@ -52,3 +70,29 @@ fetch('menu.json')
         });
     })
     .catch(error => console.error('Error loading JSON:', error));
+    const scrollRightButton = document.getElementById("scrollRightButton");
+    let isScrolling = false;
+    let scrollInterval;
+    
+    scrollRightButton.addEventListener("mousedown", () => {
+      isScrolling = true;
+      scrollInterval = setInterval(() => {
+        // Adjust the 'scrollAmount' value as needed for the desired scroll speed and direction
+        const scrollAmount = 500;
+        window.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }, 10);
+    });
+    
+    scrollRightButton.addEventListener("mouseup", () => {
+      isScrolling = false;
+      clearInterval(scrollInterval);
+    });
+    
+    scrollRightButton.addEventListener("mouseout", () => {
+      if (isScrolling) {
+        isScrolling = false;
+        clearInterval(scrollInterval);
+      }
+    });
+    
+    
