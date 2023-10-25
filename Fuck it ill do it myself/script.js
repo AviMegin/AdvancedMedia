@@ -57,11 +57,13 @@ fetch('menu.json')
                     <div class="secondimage">
                     <img src="${item.image}" alt="${item.label}" />
                     </div>
-                    <h3>Links</h3>
+                    <div class="subsections">
+                    <h3>Dot framework</h3>
                     <ul>
                         <li><a href="${item.link1}">Link 1</a></li>
                         <li><a href="${item.link2}">Link 2</a></li>
                     </ul>
+                    </div>
                 `;
             });
 

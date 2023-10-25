@@ -3,12 +3,12 @@
   "menuItems": [
     {
       "label": "Portfolio",
-      "content": "",
+      "content": "A website containing my learning process of semester 4 advanced media design. The website should have description and thinking process of differents projects",
       "researchQ":"How can the integration of interactive and aesthetic aspects, and AI technologies enhance the user experience  on a website?",
+      "link1":"",
+      "link2":"",
       "description": "How can the integration of interactive and aesthetic aspects, and AI technologies enhance the user experience  on a website?",
       "image": "../Svgs/mermaid-5138510.svg",
-      "link1": "https://example.com/project2-link1",
-      "link2": "https://example.com/project2-link2",
       "subsections": [
         {
           "sublabel": "What are the key principles of interactive design that contribute to a positive user experience on a website?",
@@ -23,16 +23,18 @@
           "subcontent": "To answer this question the making of a prototype and doing user testing on it, and the continues process of testing after coding is required"
         }
       ]
+
     },
     {
       "label": "Social Sphere",
       
       "content": "Garage2020 collaborates closely with the municipality of Eindhoven. The municipality has commissioned them to develop an innovation that helps youth workers to navigate the rapidly changing online world in which a large part of young people are active. According to research conducted by Garage2020, Dutch youth spend an average of 6 to 7 hours online per day. Youth work is not prepared for this. The field is trying to increase its digital footprint, but outside of digital activities (such as game events and editing workshops offered by Dynamo, but physically) it has not been very successful. \n \n \n \n The problem is that online activities and online methods to connect youth workers with young people are still virtually non-existent.Currently, the current concept for this problem is the 'social sphere'. This will be a platform where youth workers can learn how to use social media channels to engage with and support / inform online youth in Eindhoven using gamification elements. Stakeholder Fenna Dam has again partnered with Fontys to take this project to the next phase.",
       "description": "wut",
+      "link1":"",
+      "link2":"",
       "image": "../Svgs/compass-7933587.svg",
       "researchQ":"How can the integration of interactive and aesthetic aspects, and AI technologies enhance the user experience  on a website?",
-      "link1": "https://example.com/project2-link1",
-      "link2": "https://example.com/project2-link2",
+
       "subsections": [
         {
           "sublabel": "What is the current status of online youth work?",
@@ -55,14 +57,59 @@
           "subcontent": "expert interviews- Literary study"
         }
       ]
+    
+
     },
     {
-      "label": "About me",
+      "label": "DDW",
+      "content": "Dutch design week",
+      "description": "",
+      "link1":"",
+      "link2":"",
+      "image": "../Svgs/compass-7933587.svg",
+      "researchQ":"Artistic exploration and individual expression are the foundations of this design perspective, translated into objects and other renditions that are poetic or conceptual in nature",
+
+      "subsections": [
+        {
+          "sublabel": "What is the current status of online youth work?",
+          "subcontent": "Literary study- Expert interview- Observations"
+        },
+        {
+          "sublabel": "How can youth workers be trained to connect with young people through an online education platform?",
+          "subcontent": "Benchmark creation- Think aloud- concept"
+        },
+        {
+          "sublabel": "How can an online education platform be developed?",
+          "subcontent": "Literary study- Competitor analysis- proof of concept"
+        },
+        {
+          "sublabel": "What online problems do young people experience and how can youth workers help?",
+          "subcontent": "Focus group- observation"
+        },
+        {
+          "sublabel": "How can young people be supported online and to what extent do ethics and privacy play a role?",
+          "subcontent": "expert interviews- Literary study"
+        }
+      ],
+      "links": [
+        {
+            "label": "Link 1",
+            "url": "https://example.com/link1"
+        },
+        {
+            "label": "Link 2",
+            "url": "https://example.com/link2"
+        }
+    ]
+
+
+      
+    },
+    {
+      "label": "About me ",
+      "link1":"",
+      "link2":"",
       "content": "My name is Megin van Herk, I have done both semesters in media design and AI. therefore I have a unique combination to be able to do practical and visual effects. For my portfolio I would love to incorporate such things.For the next couple of weeks I am planning to create a portfolio website that is anything from boring, it will include all the learning outcomes and potential project that I am going to do."
-    },
-    {
-      "label": "Talk to me",
-      "content": "Contact information"
     }
     
     
